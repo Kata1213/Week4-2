@@ -8,8 +8,7 @@ public class FizzBuzzGameTest {
     @Test
     public void should_return_Fizz_when_have_3() {
        assertEquals("Fizz", new FizzBuzzGame().getAnswer(3));
-        assertNotEquals("Fizz", new FizzBuzzGame().getAnswer(13));
-    }
+            }
     @Test
     public void should_return_Fizz_when_have_3_times() {
          assertEquals("Fizz", new FizzBuzzGame().getAnswer(6));
@@ -22,7 +21,7 @@ public class FizzBuzzGameTest {
 
     @Test
     public void should_return_Buzz_when_have_5_times() {
-        assertEquals("Buzz", new FizzBuzzGame().getAnswer(6));
+        assertEquals("Buzz", new FizzBuzzGame().getAnswer(5));
     }
 
     @Test
