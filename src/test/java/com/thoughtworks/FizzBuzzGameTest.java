@@ -7,12 +7,13 @@ import static org.junit.Assert.assertNotEquals;
 public class FizzBuzzGameTest {
     @Test
     public void should_return_Fizz_when_have_3() {
-        FizzBuzzGame game = new FizzBuzzGame();
-        int num1 = 3;
-        int num2 = 13;
-        String fizz = "Fizz";
-        assertEquals(fizz, game.getAnswer(num1));
-        assertNotEquals(fizz, game.getAnswer(num2));
+       assertEquals("Fizz", new FizzBuzzGame().getAnswer(3));
+        assertNotEquals("Fizz", new FizzBuzzGame().getAnswer(13));
     }
+    @Test
+    public void should_return_Fizz_when_have_3_times() {
+         assertEquals("Fizz", new FizzBuzzGame().getAnswer(6));
+    }
+
 
 }
